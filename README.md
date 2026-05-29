@@ -81,6 +81,9 @@ git push origin
 - Desde github crea un pull request de la rama develop a main.
 - Fusiona la rama develop con en main. No deberías de tener ningún conflicto.
 - Haz nuevos cambios en el proyecto siguiendo el flujo de trabajo git flow.
+<img width="1919" height="1009" alt="image" src="https://github.com/user-attachments/assets/0d140224-3d7d-4728-a623-f8910dc9b78e" />
+
+<img width="1919" height="894" alt="image" src="https://github.com/user-attachments/assets/8a40e7e9-8348-4ea1-ba50-e6188882a6f7" />
 
 
 ## Preguntas
