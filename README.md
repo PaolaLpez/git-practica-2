@@ -8,15 +8,21 @@ Guarda los comandos realizados, así como los resultados(capturas), integrarlo d
  ```bash
  git init
  ```
+<img width="1098" height="618" alt="image" src="https://github.com/user-attachments/assets/d7282431-555c-4096-9663-2c2b9bc4df6e" />
+
 - Crea el fichero index.html con un html simple.
 - Comprueba que el repositorio a detectado el cambio. 
 ```bash
 git status
 ```
+<img width="1098" height="617" alt="image" src="https://github.com/user-attachments/assets/bb415f38-61e6-4bdb-8e53-0eebbc23f3a8" />
+
 - Añade el fichero al stage. 
 ```bash
 git add index.html.
 ```
+<img width="1098" height="618" alt="image" src="https://github.com/user-attachments/assets/1ea12fab-84d4-43ec-98f0-76f10c75e831" />
+
 - Confirma los cambios. 
 ```bash
 git commit -m “added index file”
@@ -31,12 +37,16 @@ git diff
 - Comprueba que git ha detectado el nuevo fichero. 
 ```bash
 git status
+<img width="1098" height="618" alt="image" src="https://github.com/user-attachments/assets/66549f1d-b8e9-4079-8580-91afea171f90" />
+
 ```
 - Ignora el fichero TODO.txt ya que es donde anotaremos nuestras tareas personales y no debe formar parte del proyecto. Para ello crea un fichero .gitignore con la linea TODO.txt.
 - Comprueba que ya no detecta el nuevo fichero TODO.txt (si que detectara el .gitignore claro). 
 ```bash
 git status
 ```
+<img width="1098" height="617" alt="image" src="https://github.com/user-attachments/assets/4883d06f-7da7-4463-b605-0699ccb1acfd" />
+
 - Añade y confirma el .gitignore.
 - Puedes continuar añadiendo ficheros html, css e imágenes para probar el repositorio.
 
@@ -75,18 +85,65 @@ git push origin
 
 ## Preguntas
 Crea un nuevo fichero respuestas.md, contesta las siguientes preguntas y súbelo a tu repositorio remoto de github:
+# RESPUESTAS - PRÁCTICA 2 GIT
 
- 1. ¿Qué sucede cuando hacemos un git add?
- 2. ¿Qué sucede cuando hacemos un git commit? ¿Dónde está ese commit? 
- 3. ¿Por qué al hacer git commit todavía no está disponible ese commit en el repositorio remoto?
- 4. ¿Qué hay que hacer para que veamos este commit en nuestro repositorio remoto de github?
- 5. ¿Qué diferencia hay entre hacer un fork o crear una nueva rama?
- 6. ¿Qué comando se utiliza para crear una nueva rama sin cambiarte a ella?
- 7. ¿Cuál es la diferencia entre los comandos git switch y git checkout al trabajar con ramas?
- 8. ¿Qué es una rama por defecto (como main o master) y por qué es importante?
- 9. ¿Qué comando te permite ver la lista de todas las ramas locales de tu repositorio?
- 10. En el contexto de Git, explica con tus propias palabras qué es una rama (branch) y cuál es su beneficio principal al trabajar en un proyecto de software
- 11. ¿Qué ha pasado con el contenido de la carpeta practica-taller-git? ¿Por qué no la podemos ver en nuestro repositorio remoto de github?
+---
 
+## 1. ¿Qué sucede cuando hacemos un git add?
+Cuando hacemos `git add`, los cambios del archivo se pasan al área de preparación (staging area), donde Git los deja listos para ser confirmados en un commit.
 
-*Utilice un formato que permita distinguir entre sus preguntas y respuestas*
+---
+
+## 2. ¿Qué sucede cuando hacemos un git commit? ¿Dónde está ese commit?
+Cuando hacemos `git commit`, se guarda una versión del proyecto en el repositorio local dentro de la carpeta oculta `.git`. Ese commit queda almacenado en el historial del proyecto.
+
+---
+
+## 3. ¿Por qué al hacer git commit todavía no está disponible ese commit en el repositorio remoto?
+Porque el commit solo existe en el repositorio local. Para que aparezca en GitHub es necesario enviarlo con `git push`.
+
+---
+
+## 4. ¿Qué hay que hacer para que veamos este commit en nuestro repositorio remoto de github?
+Se debe ejecutar el comando:
+git push
+
+---
+
+## 5. ¿Qué diferencia hay entre hacer un fork o crear una nueva rama?
+Un fork crea una copia completa del repositorio en tu cuenta de GitHub.
+Una rama solo crea una línea de desarrollo dentro del mismo repositorio.
+
+---
+
+## 6. ¿Qué comando se utiliza para crear una nueva rama sin cambiarte a ella?
+El comando es:
+git branch nombre-rama
+
+---
+
+## 7. ¿Cuál es la diferencia entre git switch y git checkout?
+- `git switch` se usa solo para cambiar entre ramas de forma más moderna y simple.
+- `git checkout` es más antiguo y sirve tanto para cambiar ramas como para restaurar archivos.
+
+---
+
+## 8. ¿Qué es una rama por defecto (como main o master) y por qué es importante?
+Es la rama principal del proyecto donde se guarda la versión estable del código. Es importante porque sirve como base del desarrollo.
+
+---
+
+## 9. ¿Qué comando te permite ver la lista de todas las ramas locales?
+El comando es:
+git branch
+
+---
+
+## 10. ¿Qué es una rama (branch) y cuál es su beneficio principal?
+Una rama es una línea independiente de desarrollo dentro de un proyecto.
+Su beneficio principal es permitir trabajar en nuevas funciones o cambios sin afectar la versión principal del proyecto.
+
+---
+
+## 11. ¿Qué ha pasado con la carpeta practica-taller-git? ¿Por qué no la vemos en GitHub?
+La carpeta no aparece en GitHub porque es un repositorio local. Solo se suben los archivos que han sido agregados, confirmados y enviados con `git push`. La carpeta existe en la computadora, pero no se sube automáticamente al repositorio remoto.
